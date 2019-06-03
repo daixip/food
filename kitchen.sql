@@ -34,7 +34,7 @@ CREATE TABLE menu(
    taste VARCHAR(36),
    time VARCHAR(36)
 );
-#插入数据
+
 INSERT INTO menu VALUES(NULL,"宝宝星星仔面","5819a133N03021b26.jpg","星星仔面特别的小，非常适合8个月以上的宝宝添加，胡萝卜营养丰富，含有丰富的胡萝卜素，也是宝宝辅食必不可少的蔬菜，用胡萝卜泥拌着星星仔面，特别的香甜宜人","容易","香甜","30分钟");
 INSERT INTO menu VALUES(NULL,"宝宝手指面","5819a133N03021b26.jpg","小时候妈妈经常给我们做这样的面，轻巧可爱孩子看着就喜欢吃，搭配一些蔬菜炒着吃，孩子分分钟就吃完了，不喜欢吃饭的宝宝们，妈妈们不妨试试这样的手指面；","容易","清淡","40分钟");
 INSERT INTO menu VALUES(NULL,"猫咪亲子便当","5819a133N03021b26.jpg","可爱的猫咪亲子便当搭配水果和豆浆，既营养还可以让便当餐看起来萌哒哒，这样有颜值的便当快来动手试试吧~","容易","清淡","40分钟");
@@ -109,6 +109,41 @@ CREATE TABLE lose_class(
 INSERT INTO lose_class VALUES(NULL,"2019-5-15","吃得好吃得少","管住嘴迈开腿就瘦了","5819a133N03021b26.jpg","子曾经曰过，吾日三省吾身什么好吃？吃什么好？怎么吃好？这三个问题就像人生的终极三问”我是谁，我从哪里来，要到哪里去“一样经典，困扰着所有爱吃，好吃的吃货们。吃了那么多饭，还是不明白吃得好三个字背后藏着的顺其自然的道理，真是太对不起以吃货二字自居的自己了。从今天起，做一个会吃、懂吃的人，让吃变成一件享受的事。");
 INSERT INTO lose_class VALUES(NULL,"2019-3-16","春运路上吃点什么美味又营养？","年关将至，一年一度的人类大迁徙又要开始了","5819a133N03021b26.jpg","有钱没钱，回家过年，每到这个时候，每个漂泊在外的游子，都会历经千山万水，横跨大半个中国，只为与家人们吃上一顿团圆饭。回家的路途中，打发时间也好，补充能量也罢，食物是少不了的。今天我们就来聊聊，舌尖上的春运，游子归家路上的食物。曾几何时，方便面+火腿肠就是回家路途中的标配，在那个绿皮火车的年代，出门回家路上，总忘不了在包里晒上几桶方便面。但随着时代的发展，出行的方式更加多样，绿皮火车也被快的高铁所取代，再加上人们对营养需求的提高，方便面不再是必需品。那么应该吃点什么呢？不吃肯定是不行的，春运乘坐火车对体力也是极大的考验，挤火车要力气，拿行李要力气，还得留点力气给久别重逢的亲人们一个大大的拥抱。");
 
+#创建燃烧吧！卡路里表格
+CREATE TABLE fire_class(
+    kid INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(36),
+    img VARCHAR(36),
+    content VARCHAR(20000)
+);
+INSERT INTO fire_class VALUES(NULL,"吃得好吃得少","5819a133N03021b26.jpg","管住嘴迈开腿就瘦了");
+INSERT INTO fire_class VALUES(NULL,"总忘不了在包里晒上几桶方便面","5819a133N03021b26.jpg","管那么应该吃点什么呢？不吃肯定是不行的");
+INSERT INTO fire_class VALUES(NULL,"绿皮火车也被快的高铁所取代","5819a133N03021b26.jpg","还得留点力气给久别重逢的亲人们一个大大的拥抱");
+
+#创建一天餐食表格
+CREATE TABLE days_fire_class(
+    did INT PRIMARY KEY AUTO_INCREMENT,
+    breakfast VARCHAR(255);
+    lunch VARCHAR(255);
+    dinner VARCHAR(255);
+    fireId INT,
+    FOREIGN KEY(fireId) REFERENCES fire_class(kid)
+);
+INSERT INTO fire_class VALUES(NULL,"水果","水果","水果");
+INSERT INTO fire_class VALUES(NULL,"胡萝卜","胡萝卜","胡萝卜");
+
+#创建一天餐食食材表格
+CREATE TABLE food_material_fire_class(
+    fcid INT PRIMARY KEY AUTO_INCREMENT,
+    fname VARCHAR(36),
+    count VARCHAR(36),
+    foodId INT,
+    FOREIGN KEY(foodId) REFERENCES fire_class(kid)
+);
+INSERT INTO food_material VALUES(NULL,"意面","30克","1");
+INSERT INTO food_material VALUES(NULL,"胡萝卜","半个","1");
+INSERT INTO food_material VALUES(NULL,"红薯","150克","5");
+INSERT INTO food_material VALUES(NULL,"白砂糖","适量","5");
 
 
 
