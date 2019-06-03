@@ -1,0 +1,205 @@
+/* header样式 */
+.header{
+    position: fixed;
+    top:0;
+    z-index: 999;
+    width: 100%;
+    background:linear-gradient(-180deg,rgba(0,0,0,.2),transparent);
+    display: flex;
+    background-clip: padding-box;
+    border-bottom: 1px solid transparent;
+}
+.header_second{
+    position: relative;
+    display: flex;
+    font-size:17px;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.img{
+    margin-top: 9px;
+}
+.header_ul>li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+}
+.header_a{
+    color: #fff;
+    text-decoration: none;
+}
+.header_a:hover{
+    font-weight:bold; 
+    border-bottom: 2px solid #fff;
+}
+/* header end */
+/* 轮播图 start */
+.banner{
+    width: 100%;
+    min-width: 960px;
+    height: 740px;
+    position: relative;
+}
+.banner-container>img{
+    width:100%;
+    height:740px;
+}
+.banner-cook{
+    position: absolute;
+    bottom: 377px;
+    margin-left: 480px;
+}
+.life{
+    position: absolute;
+    width:70%;
+    height:500px;
+    top:15px;
+    right:100px;
+}
+.sliders-title{
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,.2);
+    position: absolute;
+    margin-left: -480px;
+}
+.sliders-intro{
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -480px;
+}
+.banner-search{
+    position: absolute;
+    z-index: 9;
+    bottom: -20px;
+    left: 37%;
+    margin-left: -480px;
+    height: 60px;
+    width: 960px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 6px 12px 0 rgba(0,0,0,.08);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.08);
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.banner-keyword{
+    width: 960px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,.2);
+    position: absolute;
+    z-index: 19;
+    bottom: -50px;
+    left: 37%;
+    margin-left: -480px;
+}
+.tomato:hover{
+    color:#ff2e64;
+}
+.carousel-indicators{
+    position:absolute;
+    top: 550px;
+    right: 50%;
+}
+
+.search-input{
+    border:none;
+    width: 800px;
+    outline:none;
+}
+.search-btn{
+    flex: 0 74px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 20px;
+    border-radius: 4px;
+    background: #d8316c;
+    border:0;
+    box-shadow: #eee;
+    outline:none;
+}
+.banner-img{
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+}
+.swiper-prev{
+    position: absolute;
+    top: 50%;
+}
+.arrow-left {
+    margin-left: 300px;
+    width: 20px;
+    height: 35px;
+}
+.arrow-right {
+    margin-left: 1430px;
+    width: 20px;
+    height: 35px;
+}
+/* 轮播图end  */
+/* 一日三餐 start*/
+.three_meals{
+    width: 100%;
+}
+.three_meals_span{
+    color: #4d4d4d;
+    border-bottom: 4px solid #ff2e64;
+    padding-bottom: 10px;
+}
+.three_meals_div{
+    text-align: center;
+}
+.three_meals_second_div{
+    display: flex;
+    justify-content: center;
+}
+.three_meals_h3{
+    padding: 30px;
+}
+.three_meals_a{
+    color: #4d4d4d;
+    text-decoration: none;
+}
+.three_meals_a:hover{
+    color: #ff2e64;
+    border-bottom: 2px solid #ff2e64;
+}
+.three_meals_thirds_div{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+.three_meals_img{
+    width: 90%;
+}
+/*一日三餐 end*/
+/*享"瘦"之旅 start*/
+.travel{
+    width: 100%;
+}
+.travel_div{
+    text-align: center;
+}
+.travel_span{
+    color: #4d4d4d;
+}
+.travel_second_div{
+    display: flex;
+    width:80%;
+    margin: 0 auto;
+}
+.travel_img{
+    width: 85%;
+}
+/*享"瘦"之旅 end*/
