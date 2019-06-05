@@ -109,7 +109,6 @@
     top: 550px;
     right: 50%;
 }
-
 .search-input{
     border:none;
     width: 800px;
@@ -123,7 +122,7 @@
     text-align: center;
     margin: 10px 20px;
     border-radius: 4px;
-    background: #d8316c;
+    background: #ff2e64;
     border:0;
     box-shadow: #eee;
     outline:none;
@@ -164,8 +163,13 @@
     display: flex;
     justify-content: center;
 }
-.three_meals_h3{
+.three_meals_ul{
+    list-style: none;
+    padding: 0;
+}
+.three_meals_li{
     padding: 30px;
+    float: left;
 }
 .three_meals_a{
     color: #4d4d4d;
@@ -173,15 +177,41 @@
 }
 .three_meals_a:hover{
     color: #ff2e64;
+    text-decoration:none;
+    display:inline-block;
+}
+.three_meals_ul>.active{
     border-bottom: 2px solid #ff2e64;
 }
-.three_meals_thirds_div{
+.meals{
     display: flex;
     margin: 0 auto;
-    width: 80%;
+    max-width: 1280px;
+    justify-content: space-between;
 }
-.three_meals_img{
-    width: 90%;
+.meals-box{
+    width:24%;
+}
+.meals-img-box{
+    width: 100%;
+    overflow: hidden;
+}
+.meals_img{
+    width: 100%;
+    display: block;
+    transition: all 0.6s;
+}
+.meals_a:hover .meals_img{
+    transform: scale(1.1);
+}
+.meals_a{
+    text-decoration: none;
+}
+.meals_h3{
+    color: #000000;
+}
+.meals_p{
+    color: #4d4d4d;
 }
 /*一日三餐 end*/
 /*享"瘦"之旅 start*/
@@ -196,10 +226,121 @@
 }
 .travel_second_div{
     display: flex;
-    width:80%;
+    max-width: 1280px;
     margin: 0 auto;
+    justify-content:space-between;
+}
+.travel_box{
+    width: 24%;
+}
+.travel_img_box{
+    width: 100%;
+    overflow: hidden;
 }
 .travel_img{
-    width: 85%;
+    width: 100%;
+    transition: all 0.6s;
+    display: block;
+}
+.travel_img:hover{
+    transform: scale(1.1);
+}
+.travel_a{
+    text-decoration: none;
+}
+.travel_h3{
+    color: #000000;
+}
+.travel_p{
+    color: #4d4d4d;
 }
 /*享"瘦"之旅 end*/
+/*瘦身日记 start*/
+.dairy{
+    background-color:#f3f4f8;
+    width: 100%;
+}
+.dairy_div{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.dairy_2p{
+    color: #fdbd39;
+}
+.dairy_second_div{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.dairy_a_div{
+    position: relative;
+    transition: all 0.5s;
+    width: 100%;
+}
+.dairy_a_div:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 28px 1px;
+}
+.dairy_left{
+    width: 33.3%;
+    margin: 10px;
+    justify-content: space-between;
+}
+.dairy_left a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+.dairy_bottom{
+    background: #ffffff;
+    padding-left:33px;
+    /*font-family: '方正舒体';*/
+}
+.dairy_img{
+    width: 100%;
+    display: block;
+}
+.dairy_top{
+    width: 100%;
+}
+.dairy_span{
+    position: absolute;
+    right: -35px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: -40px 47px 0 0;
+    font-size: 21px;
+    background: #ff7474;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 58px;
+}
+.dairy_span2{
+    background: #ffae00!important;
+}
+.dairy_span3{
+    background: #46cd38 !important;
+}
+.dairy_bottom{
+    padding: 20px;
+}
+.name{
+    padding-left:15px;
+}
+.age{
+    padding-left: 90px;
+}
+.content{
+    margin-top: 0;
+    line-height: 21px;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.read{display: flex;}
+.write{padding-top: 7%;}
+/*瘦身日记 end*/
