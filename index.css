@@ -296,7 +296,6 @@
 .dairy_bottom{
     background: #ffffff;
     padding-left:33px;
-    /*font-family: '方正舒体';*/
 }
 .dairy_img{
     width: 100%;
@@ -344,3 +343,59 @@
 .read{display: flex;}
 .write{padding-top: 7%;}
 /*瘦身日记 end*/
+/*瘦身日记二级页面 start*/
+.dairy_two{
+    width: 100%;
+}
+.dairy_two_div{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.dairy_two_top{
+    border-radius:105px 0px;
+    border: 3px solid #ececec;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    padding: 2em;
+}
+.dairy_two_top2{
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    padding: 2em;
+}
+.dairy_two_img{
+    border-radius: 105px 0px ;
+    margin: 10px;
+}
+.dairy_two_h1{
+    font-size: 3.8em;
+    text-transform: capitalize;
+    text-align: left;
+    color: #000;
+    font-family: 'Great Vibes', cursive;
+}
+.dairy_two_h3{
+    font-size: 2.5em;
+    color: #9e8571;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 13px #a58471;
+    font-family: 'Great Vibes', cursive;
+    padding-left: 0.1em;
+}
+.dairy_two_h4{
+    color: #d3e6a6;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+}
+.dairy_two_p{
+    font-size: 16px;
+    color: #777;
+    letter-spacing: .6px;
+    line-height: 33px;
+    margin-top: 40px;
+}
+/*瘦身日记二级页面 end/
