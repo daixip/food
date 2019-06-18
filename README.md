@@ -4,7 +4,7 @@
 ## 一，数据库设计
         1.数据库使用的是mysql数据库。<br>
         2.数据库里面包含的四部分内容的数据表，分别是与用户相关的表，和与菜谱相关的表，以及与瘦身相关的故事和有关健康的知识<br>
-        3.数据库一共设计了10个数据表。与用户相关的是user表和collection_menu_list表，和与菜谱相关的表的是menu，collection_menu_list,food_material,steps,book,与瘦身相关的表是star,lose_weight,fire_class,lose_class里面包含的是瘦身相关的知识<br>
+        3.数据库一共设计了10个数据表。与用户相关的是user表和collection_menu_list表，和与菜谱相关的表的是menu，<br>collection_menu_list,food_material,steps,book,与瘦身相关的表是star,lose_weight,fire_class,lose_class里面包含的是瘦身相关的知识<br>
 ## 二，后台API列表
 ### 1.首页API
         1>一日三餐/meal
