@@ -17,8 +17,8 @@
         5>燃烧吧卡路里  /fire
         6>瘦身小课堂  /indexClass
 ### 2.二级API
-        1>瘦身日记二级页面  /dairy<br>
-        2>用户相关  登录  /login，注册  /reg，判断是否登录  /islogin<br>
+        1>瘦身日记二级页面  /dairy
+        2>用户相关  登录  /login，注册  /reg，判断是否登录  /islogin
         3>菜谱  /mealsList   2.带参数传递查找菜谱'/meals/search'
 ### 3.查询菜谱图片、标题等 
         "/getTitle",
